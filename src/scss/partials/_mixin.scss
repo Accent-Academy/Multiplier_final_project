@@ -1,0 +1,13 @@
+@mixin btn(
+  $border: null,
+  $bor_rad: null,
+  $bg_color: null,
+  $color: null,
+  $padding: null
+) {
+  padding: $padding;
+  border: $border;
+  border-radius: $bor_rad;
+  background-color: $bg_color;
+  color: $color;
+}
