@@ -1172,4 +1172,97 @@ main footer .items .head .sag button {
   margin-top: 0;
   padding: 17px 25px;
   border-radius: 8px;
+}
+main footer .items .body {
+  margin: 50px 0;
+}
+main footer .items .body .mini .svgs {
+  display: flex;
+  gap: 30px;
+}
+main footer .items .body .mini .svgs img {
+  width: 24px;
+  height: 24px;
+}
+main footer .items .body .mini h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: Inter, sans-serif;
+  color: #001c63;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+main footer .items .body .mini ul {
+  padding: 0;
+}
+main footer .items .body .mini ul li {
+  list-style: none;
+  display: block;
+  margin-bottom: 12px;
+  font-family: Inter, sans-serif;
+  color: #8992c7;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+main footer .items .body .mini p {
+  margin-bottom: 5px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  color: #001c63;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+main footer .items .body .input_item {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+main footer .items .body .input_item .mini {
+  width: 360px;
+}
+main footer .items .body .input_item .input h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: Inter, sans-serif;
+  color: #001c63;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+main footer .items .body .input_item .input p {
+  margin-bottom: 26px;
+  font-family: Inter, sans-serif;
+  color: #8992c7;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+main footer .items .body .input_item .input form input {
+  padding: 8px 5px;
+  height: 39px;
+  margin-right: 12px;
+  margin-bottom: 0;
+  border: 1px solid #d0d4ea;
+  border-radius: 6px;
+  color: #8992c7;
+  font-size: 15px;
+}
+main footer .items .body .input_item .input form button {
+  padding: 9px 16px 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: #2240cd;
+  box-shadow: 0 6px 10px 0 rgba(6, 102, 235, 0.16);
+  font-family: Hellix, sans-serif;
+  color: white;
+  font-size: 16px;
+}
+main footer .items .body .input_item .input form button:hover {
+  background-color: #001c63;
 } /*# sourceMappingURL=style.css.map */
