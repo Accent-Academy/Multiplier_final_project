@@ -2052,9 +2052,9 @@ main .Infite_scroll {
   overflow: hidden;
   width: 100vw;
   /*.half {
-      float: left;
-      width: 10%;
-    }*/
+          float: left;
+          width: 10%;
+        }*/
 }
 main .Infite_scroll span {
   display: flex;
