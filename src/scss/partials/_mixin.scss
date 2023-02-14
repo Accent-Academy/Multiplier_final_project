@@ -11,3 +11,9 @@
   background-color: $bg_color;
   color: $color;
 }
+
+@mixin img($width: null, $height: null, $obj_fit: null) {
+  width: $width;
+  height: $height;
+  $obj_fit: $obj_fit;
+}
