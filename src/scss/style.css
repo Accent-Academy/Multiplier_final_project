@@ -1921,4 +1921,80 @@ main footer .mobile .body .mini p {
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login_items {
+  display: flex;
+}
+.login_items .sol {
+  position: relative;
+  height: 100vh;
+  width: 50%;
+  background-size: cover;
+  background-color: #01113b;
+}
+.login_items .sol h4 {
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  margin: 2rem;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+.login_items .sol .footer {
+  width: 80%;
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+}
+.login_items .sol .footer h5 {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 46.2px;
+  color: white;
+  font-family: Inter, sans-serif;
+}
+.login_items .sol .footer p {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: white;
+  font-family: Inter, sans-serif;
+}
+.login_items .sag {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login_items .sag .head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.login_items .sag .head h2 {
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: -1px;
+  color: #01113b;
+  font-family: Inter, sans-serif;
+}
+.login_items .sag .head p {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #abb2d9;
+  font-family: Inter, sans-serif;
 } /*# sourceMappingURL=style.css.map */
