@@ -1,8 +1,10 @@
 nav {
   background-color: #01113b;
+  position: relative;
 }
 nav .navbar_bigsize {
-  display: none;
+  padding: 20px 0;
+  display: block;
 }
 @media (max-width: 991px) {
   nav .navbar_bigsize {
@@ -39,7 +41,7 @@ nav .navbar_bigsize .item_navbar .sol .navbar_item_next {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 28px;
   color: white;
 }
 nav .navbar_bigsize .item_navbar .sol .navbar_item_next .first_item {
@@ -90,10 +92,19 @@ nav
   position: absolute;
   left: -50px;
   border-radius: 30px;
-  top: 60px;
+  top: 25px;
   padding: 18px;
   width: 740px;
   display: none;
+}
+nav
+  .navbar_bigsize
+  .item_navbar
+  .sol
+  .navbar_item_next
+  .first_item
+  .next_item1:hover {
+  display: block;
 }
 nav
   .navbar_bigsize
@@ -134,6 +145,7 @@ nav
   align-items: center;
   gap: 20px;
   width: 260px;
+  cursor: pointer;
 }
 nav
   .navbar_bigsize
@@ -186,6 +198,7 @@ nav
   align-items: center;
   gap: 20px;
   width: 260px;
+  cursor: pointer;
 }
 nav
   .navbar_bigsize
@@ -248,9 +261,18 @@ nav
   border-radius: 30px;
   padding: 29px;
   width: 647px;
-  top: 60px;
+  top: 25px;
   left: -40px;
   display: none;
+}
+nav
+  .navbar_bigsize
+  .item_navbar
+  .sol
+  .navbar_item_next
+  .second_item
+  .next_item2:hover {
+  display: block;
 }
 nav
   .navbar_bigsize
@@ -293,6 +315,7 @@ nav
   align-items: center;
   gap: 20px;
   width: 260px;
+  cursor: pointer;
 }
 nav
   .navbar_bigsize
@@ -367,7 +390,7 @@ nav
   border-radius: 30px;
   padding: 35px 30px;
   width: 400px;
-  top: 60px;
+  top: 25px;
   left: -40px;
   display: none;
 }
@@ -377,8 +400,18 @@ nav
   .sol
   .navbar_item_next
   .third_item
+  .next_item3:hover {
+  display: block;
+}
+nav
+  .navbar_bigsize
+  .item_navbar
+  .sol
+  .navbar_item_next
+  .third_item
   .next_item3
   .nextss {
+  cursor: pointer;
   display: flex;
   margin: 30px 0;
   gap: 33px;
@@ -432,7 +465,7 @@ nav .navbar_bigsize .item_navbar .sag .sign {
 nav .navbar_bigsize .item_navbar .sag .sign:hover {
   background-color: #102171;
 }
-nav .navbar_bigsize .item_navbar .sag .book {
+nav .navbar_bigsize .item_navbar .sag .book_click {
   max-width: 145px;
   transition: 0.2s ease-in-out;
   padding: 13px 18px;
@@ -441,11 +474,18 @@ nav .navbar_bigsize .item_navbar .sag .book {
   background-color: transparent;
   color: white;
 }
-nav .navbar_bigsize .item_navbar .sag .book:hover {
+nav .navbar_bigsize .item_navbar .sag .book_click:hover {
   background-color: #abb2d9;
 }
 nav .navbar_mobile {
+  z-index: 20;
+  display: none;
   position: relative;
+}
+@media (max-width: 991px) {
+  nav .navbar_mobile {
+    display: block;
+  }
 }
 nav .navbar_mobile .items {
   padding: 10px 20px;
@@ -466,7 +506,7 @@ nav .navbar_mobile .items .sol img {
 nav .navbar_mobile .items .sag {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 nav .navbar_mobile .items .sag button {
   transition: 0.2s ease-in-out;
@@ -480,24 +520,33 @@ nav .navbar_mobile .items .sag button:hover {
   background-color: #abb2d9;
 }
 nav .navbar_mobile .items .sag .icons {
-  padding: 8px 16px;
+  padding: 15px 25px;
   border-radius: 30px;
   background-color: hsla(0deg, 0%, 100%, 0.3);
+  position: relative;
 }
 nav .navbar_mobile .items .sag .icons i {
   color: white;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}
+nav .navbar_mobile .items .sag .icons .close_icon {
+  display: none;
 }
 nav .navbar_mobile .mobile_next {
-  display: none;
+  max-height: 85vh;
+  overflow: auto;
+  height: 0;
+  transition: 0.4s ease-in-out;
   position: absolute;
-  padding: 20px;
   background-color: white;
   width: 100%;
   z-index: 2;
 }
 nav .navbar_mobile .mobile_next .total .main {
   cursor: pointer;
-  margin: 10px 0;
+  margin: 10px;
   border-bottom: 1px solid #132a97;
   display: flex;
   align-items: center;
@@ -510,14 +559,12 @@ nav .navbar_mobile .mobile_next .total .main p {
   color: #132a97;
 }
 nav .navbar_mobile .mobile_next .total .main i {
+  transition: 0.3s ease-in-out;
   color: #132a97;
   font-size: 15px;
 }
 nav .navbar_mobile .mobile_next .total .about {
   display: none;
-}
-nav .navbar_mobile .mobile_next .total .about .active2 {
-  display: block !important;
 }
 nav .navbar_mobile .mobile_next .total .about .next_item1 {
   background-color: white;
@@ -620,7 +667,7 @@ nav .navbar_mobile .mobile_next .total .about .next_item2 .data .data_item h6 {
 nav .navbar_mobile .mobile_next .total .about .next_item3 {
   background-color: white;
   border-radius: 30px;
-  padding: 35px 30px;
+  padding: 0px 17px;
 }
 nav .navbar_mobile .mobile_next .total .about .next_item3 .nextss {
   display: flex;
@@ -637,6 +684,7 @@ nav .navbar_mobile .mobile_next .total .about .next_item3 .nextss h6 {
   color: #132a97;
 }
 nav .navbar_mobile .mobile_next .main2 {
+  margin: 10px;
   cursor: pointer;
   border-bottom: 1px solid #132a97;
 }
@@ -661,6 +709,89 @@ nav .navbar_mobile .mobile_next .final_button button {
   border-color: rgba(34, 64, 205, 0.2);
   color: #132a97;
   border-radius: 5px;
+}
+nav .book_section {
+  display: none;
+  position: fixed;
+  left: 0;
+  margin: 10px auto;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  width: 40vw;
+  height: 86vh;
+}
+nav .book_section .items {
+  padding: 50px 50px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: auto;
+  width: 492px;
+  height: 100%;
+  max-height: 90vh;
+}
+@media (max-width: 767px) {
+  nav .book_section .items {
+    width: 80vw;
+    height: auto;
+  }
+}
+nav .book_section .items form {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 100%;
+}
+nav .book_section .items form i {
+  position: absolute;
+  font-size: 20px;
+  right: 10px;
+  top: 0;
+  cursor: pointer;
+}
+nav .book_section .items form label {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 13px;
+}
+nav .book_section .items form input {
+  padding: 7px;
+  width: 100%;
+}
+nav .book_section .items form select {
+  padding: 7px;
+  width: 100%;
+}
+nav .book_section .items form button {
+  margin: 30px 0;
+  display: inline;
+  width: 200px;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #6b66db;
+  border-color: #6b66db;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: arial, helvetica, sans-serif;
+}
+
+.active02 {
+  display: block !important;
+}
+
+.active03 {
+  rotate: 180deg !important;
+}
+
+.active04 {
+  height: 1000px !important;
+}
+
+.active05 {
+  display: none !important;
 }
 
 main .first_section {
@@ -1328,9 +1459,6 @@ main .fourth_section .mini p {
   line-height: 22px;
   font-weight: 400;
 }
-main .fiveth_section {
-  display: none;
-}
 main .fiveth_section .head {
   display: flex;
   justify-content: center;
@@ -1375,17 +1503,17 @@ main .fiveth_section .body .sol {
   flex-direction: column;
   gap: 20px;
 }
-main .fiveth_section .body .sol .mini {
+main .fiveth_section .body .sol .mini_js {
   display: flex;
   gap: 20px;
   width: 300px;
   cursor: pointer;
 }
-main .fiveth_section .body .sol .mini img {
+main .fiveth_section .body .sol .mini_js img {
   width: 48px;
   height: 48px;
 }
-main .fiveth_section .body .sol .mini .text h5 {
+main .fiveth_section .body .sol .mini_js .text h5 {
   margin-bottom: 16px;
   font-family: Hellix, sans-serif;
   color: #001064;
@@ -1393,7 +1521,7 @@ main .fiveth_section .body .sol .mini .text h5 {
   line-height: 24px;
   font-weight: 600;
 }
-main .fiveth_section .body .sol .mini .text p {
+main .fiveth_section .body .sol .mini_js .text p {
   font-family: Inter, sans-serif;
   color: #8992c7;
   font-size: 16px;
@@ -1402,8 +1530,13 @@ main .fiveth_section .body .sol .mini .text p {
 main .fiveth_section .body .sag {
   position: relative;
 }
+@media (max-width: 991px) {
+  main .fiveth_section .body .sag {
+    display: none;
+  }
+}
 main .fiveth_section .body .sag .big_img0 {
-  opacity: 0;
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -1475,22 +1608,44 @@ main .organizations .items .big .mini p {
   color: #01113b;
   text-align: center;
 }
-main .scroll_animation {
+main .organizations .items .big .mini .simvol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+@media (max-width: 991px) {
+  main .organizations .items .big .mini .simvol {
+    flex-direction: column;
+  }
+}
+main .organizations .items .big .mini .simvol .imgs {
+  display: flex;
+  justify-content: center;
+}
+main .organizations .items .big .mini .simvol .imgs img {
+  max-width: 100px;
+  max-height: 129px;
+  margin-right: 50px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+main .organizations .items .scroll_animation {
   display: none;
   margin: 100px 0;
 }
-main .scroll_animation .items .head {
+main .organizations .items .scroll_animation .items .head {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-main .scroll_animation .items .head img {
+main .organizations .items .scroll_animation .items .head img {
   width: 74px;
   height: 74px;
   padding: 19px;
 }
-main .scroll_animation .items .head h2 {
+main .organizations .items .scroll_animation .items .head h2 {
   margin-top: 8px;
   margin-bottom: 8px;
   font-family: Hellix, sans-serif;
@@ -1499,7 +1654,7 @@ main .scroll_animation .items .head h2 {
   line-height: 45px;
   font-weight: 600;
 }
-main .scroll_animation .items .head p {
+main .organizations .items .scroll_animation .items .head p {
   margin-bottom: 0;
   font-family: Inter, sans-serif;
   color: #8992c7;
@@ -1507,14 +1662,14 @@ main .scroll_animation .items .head p {
   line-height: 30px;
   font-weight: 400;
 }
-main .scroll_animation .items .body {
+main .organizations .items .scroll_animation .items .body {
   position: relative;
   margin: 400px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .scroll_animation .items .body .top_card {
+main .organizations .items .scroll_animation .items .body .top_card {
   box-shadow: 0px 0px 15px 0px;
   border-radius: 20px;
   position: absolute;
@@ -1529,11 +1684,11 @@ main .scroll_animation .items .body .top_card {
   min-width: 480px;
   padding: 30px 40px;
 }
-main .scroll_animation .items .body .top_card img {
+main .organizations .items .scroll_animation .items .body .top_card img {
   width: 200px;
   height: 200px;
 }
-main .scroll_animation .items .body .top_card h2 {
+main .organizations .items .scroll_animation .items .body .top_card h2 {
   color: #001c63;
   font-size: 32px;
   line-height: 46px;
@@ -1541,7 +1696,7 @@ main .scroll_animation .items .body .top_card h2 {
   text-align: center;
   letter-spacing: -1px;
 }
-main .scroll_animation .items .body .top_card p {
+main .organizations .items .scroll_animation .items .body .top_card p {
   margin-top: 22px;
   margin-bottom: 24px;
   font-family: Inter, sans-serif;
@@ -1551,7 +1706,7 @@ main .scroll_animation .items .body .top_card p {
   font-weight: 400;
   text-align: center;
 }
-main .scroll_animation .items .body .top_card button {
+main .organizations .items .scroll_animation .items .body .top_card button {
   border: 1px solid rgba(34, 64, 205, 0.2);
   background-color: transparent;
   box-shadow: none;
@@ -1565,14 +1720,14 @@ main .scroll_animation .items .body .top_card button {
   text-align: center;
   cursor: pointer;
 }
-main .scroll_animation .items .body .left_above {
+main .organizations .items .scroll_animation .items .body .left_above {
   left: 200px;
   position: absolute;
   z-index: 5;
   width: 290px;
   height: 450px;
 }
-main .scroll_animation .items .body .left_above img {
+main .organizations .items .scroll_animation .items .body .left_above img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -1580,17 +1735,24 @@ main .scroll_animation .items .body .left_above img {
   object-fit: cover;
   cursor: pointer;
 }
-main .scroll_animation .items .body .left_above img:hover {
+main
+  .organizations
+  .items
+  .scroll_animation
+  .items
+  .body
+  .left_above
+  img:hover {
   box-shadow: 0px 0px 50px 0px #001c63;
 }
-main .scroll_animation .items .body .right_above {
+main .organizations .items .scroll_animation .items .body .right_above {
   right: 200px;
   position: absolute;
   z-index: 5;
   width: 290px;
   height: 450px;
 }
-main .scroll_animation .items .body .right_above img {
+main .organizations .items .scroll_animation .items .body .right_above img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -1598,17 +1760,24 @@ main .scroll_animation .items .body .right_above img {
   object-fit: cover;
   cursor: pointer;
 }
-main .scroll_animation .items .body .right_above img:hover {
+main
+  .organizations
+  .items
+  .scroll_animation
+  .items
+  .body
+  .right_above
+  img:hover {
   box-shadow: 0px 0px 50px 0px #001c63;
 }
-main .scroll_animation .items .body .left_bottom {
+main .organizations .items .scroll_animation .items .body .left_bottom {
   left: 50px;
   position: absolute;
   z-index: -5;
   width: 250px;
   height: 290px;
 }
-main .scroll_animation .items .body .left_bottom img {
+main .organizations .items .scroll_animation .items .body .left_bottom img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1616,17 +1785,24 @@ main .scroll_animation .items .body .left_bottom img {
   border-radius: 20px;
   cursor: pointer;
 }
-main .scroll_animation .items .body .left_bottom img:hover {
+main
+  .organizations
+  .items
+  .scroll_animation
+  .items
+  .body
+  .left_bottom
+  img:hover {
   box-shadow: 0px 0px 50px 0px #001c63;
 }
-main .scroll_animation .items .body .right_bottom {
+main .organizations .items .scroll_animation .items .body .right_bottom {
   right: 50px;
   position: absolute;
   z-index: -5;
   width: 250px;
   height: 290px;
 }
-main .scroll_animation .items .body .right_bottom img {
+main .organizations .items .scroll_animation .items .body .right_bottom img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1634,19 +1810,26 @@ main .scroll_animation .items .body .right_bottom img {
   border-radius: 20px;
   cursor: pointer;
 }
-main .scroll_animation .items .body .right_bottom img:hover {
+main
+  .organizations
+  .items
+  .scroll_animation
+  .items
+  .body
+  .right_bottom
+  img:hover {
   box-shadow: 0px 0px 50px 0px #001c63;
 }
-main .swipper_section .items {
+main .organizations .items .swipper_section .items {
   position: relative;
 }
-main .swipper_section .items .head {
+main .organizations .items .swipper_section .items .head {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-main .swipper_section .items .head h1 {
+main .organizations .items .swipper_section .items .head h1 {
   margin-top: 8px;
   margin-bottom: 8px;
   font-family: Hellix, sans-serif;
@@ -1655,7 +1838,7 @@ main .swipper_section .items .head h1 {
   line-height: 45px;
   font-weight: 600;
 }
-main .swipper_section .items .head p {
+main .organizations .items .swipper_section .items .head p {
   margin-bottom: 0;
   font-family: Inter, sans-serif;
   color: #8992c7;
@@ -1663,19 +1846,30 @@ main .swipper_section .items .head p {
   line-height: 30px;
   font-weight: 400;
 }
-main .swipper_section .items .swiper {
+main .organizations .items .swipper_section .items .swiper {
   margin: 100px 0;
   width: 100%;
   height: 100%;
 }
-main .swipper_section .items .swiper-slide {
+main .organizations .items .swipper_section .items .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  gap: 30px;
-  width: 290px;
-  height: 290px;
+  gap: 20px;
 }
-main .swipper_section .items .swiper-slide p {
+main .organizations .items .swipper_section .items .swiper-slide img {
+  display: block;
+  max-width: 290px;
+  max-height: 180px;
+  border-radius: 15px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+main .organizations .items .swipper_section .items .swiper-slide p {
   font-family: Hellix, sans-serif;
   width: 280px;
   margin-bottom: 14px;
@@ -1684,39 +1878,34 @@ main .swipper_section .items .swiper-slide p {
   line-height: 28px;
   font-weight: 600;
 }
-main .swipper_section .items .swiper-slide img {
+main .organizations .items .swipper_section .items .swiper-slide img {
   display: block;
-  width: 290px;
-  height: 180px;
-  border-radius: 15px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
-main .swipper_section .items .swiper {
-  margin-left: auto;
-  margin-right: auto;
-}
-main .sixth_section {
+main .organizations .items .sixth_section {
   background-size: cover;
   padding: 100px;
   background-color: #132a97;
 }
-main .sixth_section .big_img {
+main .organizations .items .sixth_section .big_img {
   margin: 0 auto;
   max-width: 760px;
   max-height: 360px;
 }
-main .sixth_section .big_img img {
+main .organizations .items .sixth_section .big_img img {
   width: 100%;
   height: 100%;
 }
-main .sixth_section .text {
+main .organizations .items .sixth_section .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-main .sixth_section .text h6 {
+main .organizations .items .sixth_section .text h6 {
   max-width: 760px;
   margin-top: 16px;
   margin-bottom: 48px;
@@ -1728,13 +1917,13 @@ main .sixth_section .text h6 {
   text-align: center;
 }
 @media (max-width: 700px) {
-  main .sixth_section .text h6 {
+  main .organizations .items .sixth_section .text h6 {
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 32px;
   }
 }
-main .sixth_section .text button {
+main .organizations .items .sixth_section .text button {
   background-color: #fff;
   color: #2240cd;
   margin-top: 0;
@@ -1747,33 +1936,33 @@ main .sixth_section .text button {
   border: transparent;
 }
 @media (max-width: 700px) {
-  main .sixth_section .text button {
+  main .organizations .items .sixth_section .text button {
     margin-bottom: 20px;
     font-size: 13px;
     line-height: 32px;
   }
 }
-main footer {
+main .organizations .items footer {
   padding: 100px 0;
 }
-main footer .items_bigsize {
+main .organizations .items footer .items_bigsize {
   display: block;
 }
 @media (max-width: 992px) {
-  main footer .items_bigsize {
+  main .organizations .items footer .items_bigsize {
     display: none;
   }
 }
-main footer .items_bigsize .head {
+main .organizations .items footer .items_bigsize .head {
   display: flex;
   justify-content: space-between;
 }
-main footer .items_bigsize .head .sol {
+main .organizations .items footer .items_bigsize .head .sol {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-main footer .items_bigsize .head .sol p {
+main .organizations .items footer .items_bigsize .head .sol p {
   margin-right: 25px;
   margin-left: 25px;
   font-family: Inter, sans-serif;
@@ -1782,7 +1971,7 @@ main footer .items_bigsize .head .sol p {
   line-height: 24px;
   text-decoration: none;
 }
-main footer .items_bigsize .head .sag button {
+main .organizations .items footer .items_bigsize .head .sag button {
   border: 1px solid rgba(34, 64, 205, 0.2);
   background-color: transparent;
   box-shadow: none;
@@ -1791,18 +1980,18 @@ main footer .items_bigsize .head .sag button {
   padding: 17px 25px;
   border-radius: 8px;
 }
-main footer .items_bigsize .body {
+main .organizations .items footer .items_bigsize .body {
   margin: 50px 0;
 }
-main footer .items_bigsize .body .mini .svgs {
+main .organizations .items footer .items_bigsize .body .mini .svgs {
   display: flex;
   gap: 15px;
 }
-main footer .items_bigsize .body .mini .svgs img {
+main .organizations .items footer .items_bigsize .body .mini .svgs img {
   width: 24px;
   height: 24px;
 }
-main footer .items_bigsize .body .mini h2 {
+main .organizations .items footer .items_bigsize .body .mini h2 {
   margin-top: 0;
   margin-bottom: 10px;
   font-family: Inter, sans-serif;
@@ -1812,10 +2001,10 @@ main footer .items_bigsize .body .mini h2 {
   font-weight: 600;
   letter-spacing: 0;
 }
-main footer .items_bigsize .body .mini ul {
+main .organizations .items footer .items_bigsize .body .mini ul {
   padding: 0;
 }
-main footer .items_bigsize .body .mini ul li {
+main .organizations .items footer .items_bigsize .body .mini ul li {
   list-style: none;
   display: block;
   margin-bottom: 12px;
@@ -1826,10 +2015,10 @@ main footer .items_bigsize .body .mini ul li {
   text-decoration: none;
   cursor: pointer;
 }
-main footer .items_bigsize .body .mini ul li:hover {
+main .organizations .items footer .items_bigsize .body .mini ul li:hover {
   text-decoration: underline;
 }
-main footer .items_bigsize .body .mini p {
+main .organizations .items footer .items_bigsize .body .mini p {
   margin-bottom: 5px;
   font-family: Inter, sans-serif;
   font-weight: 400;
@@ -1838,12 +2027,12 @@ main footer .items_bigsize .body .mini p {
   line-height: 24px;
   text-decoration: none;
 }
-main footer .items_bigsize .body .input_item {
+main .organizations .items footer .items_bigsize .body .input_item {
   display: flex;
   flex-direction: column;
   gap: 70px;
 }
-main footer .items_bigsize .body .input_item .input h2 {
+main .organizations .items footer .items_bigsize .body .input_item .input h2 {
   margin-top: 0;
   margin-bottom: 10px;
   font-family: Inter, sans-serif;
@@ -1853,7 +2042,7 @@ main footer .items_bigsize .body .input_item .input h2 {
   font-weight: 600;
   letter-spacing: 0;
 }
-main footer .items_bigsize .body .input_item .input p {
+main .organizations .items footer .items_bigsize .body .input_item .input p {
   margin-bottom: 26px;
   font-family: Inter, sans-serif;
   color: #8992c7;
@@ -1862,7 +2051,16 @@ main footer .items_bigsize .body .input_item .input p {
   font-weight: 400;
   text-align: left;
 }
-main footer .items_bigsize .body .input_item .input form input {
+main
+  .organizations
+  .items
+  footer
+  .items_bigsize
+  .body
+  .input_item
+  .input
+  form
+  input {
   padding: 8px 5px;
   height: 39px;
   margin-right: 12px;
@@ -1872,7 +2070,16 @@ main footer .items_bigsize .body .input_item .input form input {
   color: #8992c7;
   font-size: 15px;
 }
-main footer .items_bigsize .body .input_item .input form button {
+main
+  .organizations
+  .items
+  footer
+  .items_bigsize
+  .body
+  .input_item
+  .input
+  form
+  button {
   padding: 9px 16px 10px;
   border: 1px solid transparent;
   border-radius: 8px;
@@ -1882,42 +2089,51 @@ main footer .items_bigsize .body .input_item .input form button {
   color: white;
   font-size: 16px;
 }
-main footer .items_bigsize .body .input_item .input form button:hover {
+main
+  .organizations
+  .items
+  footer
+  .items_bigsize
+  .body
+  .input_item
+  .input
+  form
+  button:hover {
   background-color: #001c63;
 }
-main footer .mobile {
+main .organizations .items footer .mobile {
   display: none;
 }
 @media (max-width: 992px) {
-  main footer .mobile {
+  main .organizations .items footer .mobile {
     display: block;
   }
 }
-main footer .mobile .head {
+main .organizations .items footer .mobile .head {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-main footer .mobile .head .svgs {
+main .organizations .items footer .mobile .head .svgs {
   display: flex;
   gap: 10px;
 }
-main footer .mobile .head .svgs img {
+main .organizations .items footer .mobile .head .svgs img {
   width: 24px;
   height: 24px;
 }
-main footer .mobile .body {
+main .organizations .items footer .mobile .body {
   margin: 40px 0;
 }
-main footer .mobile .body .mini .svgs {
+main .organizations .items footer .mobile .body .mini .svgs {
   display: flex;
   gap: 30px;
 }
-main footer .mobile .body .mini .svgs img {
+main .organizations .items footer .mobile .body .mini .svgs img {
   width: 24px;
   height: 24px;
 }
-main footer .mobile .body .mini h2 {
+main .organizations .items footer .mobile .body .mini h2 {
   margin-top: 0;
   margin-bottom: 10px;
   font-family: Inter, sans-serif;
@@ -1927,10 +2143,10 @@ main footer .mobile .body .mini h2 {
   font-weight: 600;
   letter-spacing: 0;
 }
-main footer .mobile .body .mini ul {
+main .organizations .items footer .mobile .body .mini ul {
   padding: 0;
 }
-main footer .mobile .body .mini ul li {
+main .organizations .items footer .mobile .body .mini ul li {
   list-style: none;
   display: block;
   margin-bottom: 12px;
@@ -1941,10 +2157,10 @@ main footer .mobile .body .mini ul li {
   text-decoration: none;
   cursor: pointer;
 }
-main footer .mobile .body .mini ul li:hover {
+main .organizations .items footer .mobile .body .mini ul li:hover {
   text-decoration: underline;
 }
-main footer .mobile .body .mini p {
+main .organizations .items footer .mobile .body .mini p {
   margin-bottom: 5px;
   font-family: Inter, sans-serif;
   font-weight: 400;
