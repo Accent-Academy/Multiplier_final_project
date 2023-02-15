@@ -298,7 +298,7 @@
             <div class="sag">
               <p>Login</p>
               <button class="sign">Sign up</button>
-              <button class="book">Book a demo</button>
+              <button class="book_click">Book a demo</button>
             </div>
           </div>
         </div>
@@ -314,18 +314,20 @@
           </div>
 
           <div class="sag">
-            <button>Book a demo</button>
+            <button class="book_click">Book a demo</button>
             <div class="icons">
               <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-xmark close_icon"></i>
             </div>
           </div>
         </div>
+        <a href=""></a>
 
         <div class="mobile_next">
           <div class="total">
             <div class="main">
               <p>How it works</p>
-              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-down rotate_0"></i>
             </div>
             <div class="about">
               <div class="next_item1">
@@ -404,7 +406,7 @@
           <div class="total">
             <div class="main">
               <p>Solutions</p>
-              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-down rotate_0"></i>
             </div>
             <div class="about">
               <div class="next_item2">
@@ -504,7 +506,7 @@
           <div class="total">
             <div class="main">
               <p>Resources</p>
-              <i class="fa-solid fa-chevron-down"></i>
+              <i class="fa-solid fa-chevron-down rotate_0"></i>
             </div>
             <div class="about">
               <div class="next_item3">
@@ -561,6 +563,45 @@
             <button>Login</button>
             <button>Sign up</button>
           </div>
+        </div>
+      </div>
+
+      <div class="book_section">
+        <div class="items">
+          <form>
+            <i class="fa-solid fa-xmark close_book"></i>
+            <label for="fname">First Name*</label>
+            <input type="text" />
+            <label for="lname">Last Name</label>
+            <input type="text" />
+            <label for="email">Company Email</label>
+            <input type="email" />
+            <label for="number">Phone Number</label>
+            <input type="number" placeholder="+1 1234567890" />
+            <label for="location">Which country are you located in?*</label>
+
+            <select id="country" name="country">
+              <option value="Azerbaijan">Aerbaijan</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Morocco">Morocco</option>
+              <option value="England">England</option>
+              <option value="France">France</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Mexico">Mexico</option>
+            </select>
+            <label for="yes or no">
+              Do you have the candidate ready to onboard?*</label
+            >
+
+            <select name="yesno" id="yesno">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+            <button>Book a Demo</button>
+          </form>
         </div>
       </div>
     </nav>
@@ -991,7 +1032,7 @@
               <div class="row">
                 <div class="col-6">
                   <div class="sol">
-                    <div class="mini">
+                    <div class="mini_js">
                       <img
                         src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/616531a2d550ec849e7192e8_Group%205169909.svg"
                         alt=""
@@ -1005,7 +1046,7 @@
                       </div>
                     </div>
 
-                    <div class="mini">
+                    <div class="mini_js">
                       <img
                         src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/6178cceea6d45b2cba684988_4.svg"
                         alt=""
@@ -1019,7 +1060,7 @@
                       </div>
                     </div>
 
-                    <div class="mini">
+                    <div class="mini_js">
                       <img
                         src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/6178ccec322412422049a2c9_3.svg"
                         alt=""
@@ -1033,7 +1074,7 @@
                       </div>
                     </div>
 
-                    <div class="mini">
+                    <div class="mini_js">
                       <img
                         src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/6178cce429b3c7394a626bb1_2.svg"
                         alt=""
@@ -1071,7 +1112,7 @@
                     </div>
                     <div class="big_img0">
                       <img
-                        src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/631f08b7a6a75c439cf317c2_Benefits%20administration-min.svg"
+                        src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/631f0c48d120deaf3c69d41b_Expenses%20%26%20Leave%20Management-p-800.png"
                         alt=""
                       />
                     </div>
@@ -1085,42 +1126,35 @@
 
       <section class="organizations">
         <div class="container">
-          <h1>The preferred choice of leading global organizations</h1>
           <div class="items">
-            <div class="big">
-              <div class="mini">
-                <div class="img">
-                  <img
-                    src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/63328e56fe08ed90926cd183_img2-Leader.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="mini">
-                <div class="img">
-                  <img
-                    src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/636e04d1c3c481802313ce48_Multiplier%20Capterra%20Ease%20Use%20Badge-p-500.webp"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
+            <h1>The preferred choice of leading global organizations</h1>
 
-            <div class="big">
-              <div class="mini">
-                <div class="img">
-                  <img
-                    src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/63328e56b9bfea441ad966fa_img3-EaseOfUse.svg"
-                    alt=""
-                  />
+            <div class="simvol">
+              <div class="row justify-content-center">
+                <div class="col-lg-6">
+                  <div class="imgs">
+                    <img
+                      src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/63328e56fe08ed90926cd183_img2-Leader.svg"
+                      alt=""
+                    />
+
+                    <img
+                      src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/636e04d1c3c481802313ce48_Multiplier%20Capterra%20Ease%20Use%20Badge-p-500.webp"
+                      alt=""
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="mini">
-                <div class="img">
-                  <img
-                    src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/63844c8115bbb6728d9c4aa8_Multiplier%20Technologies%20Banner_Winner-Ribbon_Vertical_30-p-500.webp"
-                    alt=""
-                  />
+                <div class="col-lg-6">
+                  <div class="imgs">
+                    <img
+                      src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/63328e56b9bfea441ad966fa_img3-EaseOfUse.svg"
+                      alt=""
+                    />
+                    <img
+                      src="https://assets-global.website-files.com/601cea0056c5710021a1f03c/63844c8115bbb6728d9c4aa8_Multiplier%20Technologies%20Banner_Winner-Ribbon_Vertical_30-p-500.webp"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -1272,6 +1306,7 @@
                   </p>
                 </div>
               </div>
+              <!-- <div class="swiper-pagination"></div> -->
             </div>
           </div>
         </div>
