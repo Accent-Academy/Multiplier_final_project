@@ -1,5 +1,6 @@
 nav {
   background-color: #01113b;
+  position: relative;
 }
 nav .navbar_bigsize {
   padding: 20px 0;
@@ -40,7 +41,7 @@ nav .navbar_bigsize .item_navbar .sol .navbar_item_next {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 28px;
   color: white;
 }
 nav .navbar_bigsize .item_navbar .sol .navbar_item_next .first_item {
@@ -91,10 +92,19 @@ nav
   position: absolute;
   left: -50px;
   border-radius: 30px;
-  top: 60px;
+  top: 25px;
   padding: 18px;
   width: 740px;
   display: none;
+}
+nav
+  .navbar_bigsize
+  .item_navbar
+  .sol
+  .navbar_item_next
+  .first_item
+  .next_item1:hover {
+  display: block;
 }
 nav
   .navbar_bigsize
@@ -135,6 +145,7 @@ nav
   align-items: center;
   gap: 20px;
   width: 260px;
+  cursor: pointer;
 }
 nav
   .navbar_bigsize
@@ -187,6 +198,7 @@ nav
   align-items: center;
   gap: 20px;
   width: 260px;
+  cursor: pointer;
 }
 nav
   .navbar_bigsize
@@ -249,9 +261,18 @@ nav
   border-radius: 30px;
   padding: 29px;
   width: 647px;
-  top: 60px;
+  top: 25px;
   left: -40px;
   display: none;
+}
+nav
+  .navbar_bigsize
+  .item_navbar
+  .sol
+  .navbar_item_next
+  .second_item
+  .next_item2:hover {
+  display: block;
 }
 nav
   .navbar_bigsize
@@ -294,6 +315,7 @@ nav
   align-items: center;
   gap: 20px;
   width: 260px;
+  cursor: pointer;
 }
 nav
   .navbar_bigsize
@@ -368,7 +390,7 @@ nav
   border-radius: 30px;
   padding: 35px 30px;
   width: 400px;
-  top: 60px;
+  top: 25px;
   left: -40px;
   display: none;
 }
@@ -378,8 +400,18 @@ nav
   .sol
   .navbar_item_next
   .third_item
+  .next_item3:hover {
+  display: block;
+}
+nav
+  .navbar_bigsize
+  .item_navbar
+  .sol
+  .navbar_item_next
+  .third_item
   .next_item3
   .nextss {
+  cursor: pointer;
   display: flex;
   margin: 30px 0;
   gap: 33px;
@@ -446,6 +478,7 @@ nav .navbar_bigsize .item_navbar .sag .book_click:hover {
   background-color: #abb2d9;
 }
 nav .navbar_mobile {
+  z-index: 20;
   display: none;
   position: relative;
 }
@@ -473,7 +506,7 @@ nav .navbar_mobile .items .sol img {
 nav .navbar_mobile .items .sag {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
 }
 nav .navbar_mobile .items .sag button {
   transition: 0.2s ease-in-out;
@@ -487,24 +520,33 @@ nav .navbar_mobile .items .sag button:hover {
   background-color: #abb2d9;
 }
 nav .navbar_mobile .items .sag .icons {
-  padding: 8px 16px;
+  padding: 15px 25px;
   border-radius: 30px;
   background-color: hsla(0deg, 0%, 100%, 0.3);
+  position: relative;
 }
 nav .navbar_mobile .items .sag .icons i {
   color: white;
+  position: absolute;
+  top: 7px;
+  right: 15px;
+}
+nav .navbar_mobile .items .sag .icons .close_icon {
+  display: none;
 }
 nav .navbar_mobile .mobile_next {
-  display: none;
+  max-height: 85vh;
+  overflow: auto;
+  height: 0;
+  transition: 0.4s ease-in-out;
   position: absolute;
-  padding: 20px;
   background-color: white;
   width: 100%;
   z-index: 2;
 }
 nav .navbar_mobile .mobile_next .total .main {
   cursor: pointer;
-  margin: 10px 0;
+  margin: 10px;
   border-bottom: 1px solid #132a97;
   display: flex;
   align-items: center;
@@ -517,14 +559,12 @@ nav .navbar_mobile .mobile_next .total .main p {
   color: #132a97;
 }
 nav .navbar_mobile .mobile_next .total .main i {
+  transition: 0.3s ease-in-out;
   color: #132a97;
   font-size: 15px;
 }
 nav .navbar_mobile .mobile_next .total .about {
   display: none;
-}
-nav .navbar_mobile .mobile_next .total .about .active2 {
-  display: block !important;
 }
 nav .navbar_mobile .mobile_next .total .about .next_item1 {
   background-color: white;
@@ -627,7 +667,7 @@ nav .navbar_mobile .mobile_next .total .about .next_item2 .data .data_item h6 {
 nav .navbar_mobile .mobile_next .total .about .next_item3 {
   background-color: white;
   border-radius: 30px;
-  padding: 35px 30px;
+  padding: 0px 17px;
 }
 nav .navbar_mobile .mobile_next .total .about .next_item3 .nextss {
   display: flex;
@@ -644,6 +684,7 @@ nav .navbar_mobile .mobile_next .total .about .next_item3 .nextss h6 {
   color: #132a97;
 }
 nav .navbar_mobile .mobile_next .main2 {
+  margin: 10px;
   cursor: pointer;
   border-bottom: 1px solid #132a97;
 }
@@ -669,49 +710,60 @@ nav .navbar_mobile .mobile_next .final_button button {
   color: #132a97;
   border-radius: 5px;
 }
-
-main .book_section {
+nav .book_section {
   display: none;
-}
-main .book_section .items {
-  background-color: white;
-  padding: 35px;
   position: fixed;
+  left: 0;
+  margin: 10px auto;
   top: 80px;
-  left: 40%;
+  right: 0;
+  bottom: 0;
   z-index: 20;
+  width: 40vw;
+  height: 86vh;
+}
+nav .book_section .items {
+  padding: 50px 50px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: auto;
   width: 492px;
   height: 100%;
-  max-height: 86vh;
-  border-radius: 20px;
+  max-height: 90vh;
 }
-main .book_section .items form {
+@media (max-width: 767px) {
+  nav .book_section .items {
+    width: 80vw;
+    height: auto;
+  }
+}
+nav .book_section .items form {
   position: relative;
   display: flex;
   gap: 10px;
   flex-direction: column;
   width: 100%;
 }
-main .book_section .items form i {
+nav .book_section .items form i {
   position: absolute;
   font-size: 20px;
   right: 10px;
   top: 0;
   cursor: pointer;
 }
-main .book_section .items form label {
+nav .book_section .items form label {
   font-family: arial, helvetica, sans-serif;
   font-size: 13px;
 }
-main .book_section .items form input {
+nav .book_section .items form input {
   padding: 7px;
   width: 100%;
 }
-main .book_section .items form select {
+nav .book_section .items form select {
   padding: 7px;
   width: 100%;
 }
-main .book_section .items form button {
+nav .book_section .items form button {
   margin: 30px 0;
   display: inline;
   width: 200px;
@@ -725,6 +777,23 @@ main .book_section .items form button {
   line-height: 12px;
   font-family: arial, helvetica, sans-serif;
 }
+
+.active02 {
+  display: block !important;
+}
+
+.active03 {
+  rotate: 180deg !important;
+}
+
+.active04 {
+  height: 1000px !important;
+}
+
+.active05 {
+  display: none !important;
+}
+
 main .first_section {
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
@@ -1390,9 +1459,6 @@ main .fourth_section .mini p {
   line-height: 22px;
   font-weight: 400;
 }
-main .fiveth_section {
-  display: none;
-}
 main .fiveth_section .head {
   display: flex;
   justify-content: center;
@@ -1437,17 +1503,17 @@ main .fiveth_section .body .sol {
   flex-direction: column;
   gap: 20px;
 }
-main .fiveth_section .body .sol .mini {
+main .fiveth_section .body .sol .mini_js {
   display: flex;
   gap: 20px;
   width: 300px;
   cursor: pointer;
 }
-main .fiveth_section .body .sol .mini img {
+main .fiveth_section .body .sol .mini_js img {
   width: 48px;
   height: 48px;
 }
-main .fiveth_section .body .sol .mini .text h5 {
+main .fiveth_section .body .sol .mini_js .text h5 {
   margin-bottom: 16px;
   font-family: Hellix, sans-serif;
   color: #001064;
@@ -1455,7 +1521,7 @@ main .fiveth_section .body .sol .mini .text h5 {
   line-height: 24px;
   font-weight: 600;
 }
-main .fiveth_section .body .sol .mini .text p {
+main .fiveth_section .body .sol .mini_js .text p {
   font-family: Inter, sans-serif;
   color: #8992c7;
   font-size: 16px;
@@ -1464,8 +1530,13 @@ main .fiveth_section .body .sol .mini .text p {
 main .fiveth_section .body .sag {
   position: relative;
 }
+@media (max-width: 991px) {
+  main .fiveth_section .body .sag {
+    display: none;
+  }
+}
 main .fiveth_section .body .sag .big_img0 {
-  opacity: 0;
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -1495,6 +1566,17 @@ main .organizations .items h1 {
   text-align: center;
   letter-spacing: -1px;
 }
+main .organizations .items .simvol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+@media (max-width: 991px) {
+  main .organizations .items .simvol {
+    flex-direction: column;
+  }
+}
 main .organizations .items .simvol .imgs {
   display: flex;
   justify-content: center;
@@ -1502,7 +1584,7 @@ main .organizations .items .simvol .imgs {
 main .organizations .items .simvol .imgs img {
   max-width: 100px;
   max-height: 129px;
-  margin-right: 80px;
+  margin-right: 50px;
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -1700,11 +1782,22 @@ main .swipper_section .items .swiper {
   height: 100%;
 }
 main .swipper_section .items .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  gap: 30px;
-  width: 290px;
-  height: 290px;
+  gap: 20px;
+}
+main .swipper_section .items .swiper-slide img {
+  display: block;
+  max-width: 290px;
+  max-height: 180px;
+  border-radius: 15px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 main .swipper_section .items .swiper-slide p {
   font-family: Hellix, sans-serif;
@@ -1717,15 +1810,10 @@ main .swipper_section .items .swiper-slide p {
 }
 main .swipper_section .items .swiper-slide img {
   display: block;
-  width: 290px;
-  height: 180px;
-  border-radius: 15px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-}
-main .swipper_section .items .swiper {
-  margin-left: auto;
-  margin-right: auto;
 }
 main .sixth_section {
   background-size: cover;
