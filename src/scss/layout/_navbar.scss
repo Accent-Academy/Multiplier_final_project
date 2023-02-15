@@ -2,7 +2,8 @@ nav {
   background-color: $primary_color;
 
   .navbar_bigsize {
-    display: none;
+    padding: 20px 0;
+    display: block;
 
     @media (max-width: 991px) {
       display: none;
@@ -284,7 +285,7 @@ nav {
           );
         }
 
-        .book {
+        .book_click {
           max-width: 145px;
           transition: 0.2s ease-in-out;
 
@@ -299,7 +300,12 @@ nav {
   }
 
   .navbar_mobile {
+    display: none;
     position: relative;
+
+    @media (max-width: 991px) {
+      display: block;
+    }
 
     .items {
       padding: 10px 20px;
