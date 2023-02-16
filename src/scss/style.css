@@ -2,7 +2,7 @@ nav {
   background-color: #01113b;
 }
 nav .navbar_bigsize {
-  display: none;
+  display: block;
 }
 @media (max-width: 991px) {
   nav .navbar_bigsize {

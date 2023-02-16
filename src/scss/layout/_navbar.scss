@@ -2,7 +2,7 @@ nav {
   background-color: $primary_color;
 
   .navbar_bigsize {
-    display: none;
+    display: block;
 
     @media (max-width: 991px) {
       display: none;
