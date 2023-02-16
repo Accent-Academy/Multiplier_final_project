@@ -1,7 +1,6 @@
 main {
   .banner1 {
     padding: 100px 50px;
-    margin: 100px 0 0 0;
 
     background-color: $primary_color;
 
@@ -93,10 +92,8 @@ main {
   }
 
   .Infite_scroll {
-    display: none;
     background-color: $primary_color;
     overflow: hidden;
-    width: 100vw;
 
     span {
       display: flex;
@@ -661,9 +658,9 @@ main {
         flex-direction: column;
         justify-content: center;
 
-        .total {
+        .total00 {
           cursor: pointer;
-          .first {
+          .first00 {
             display: flex;
             justify-content: space-between;
             max-width: 480px;
@@ -682,7 +679,7 @@ main {
             }
           }
 
-          .second {
+          .second00 {
             max-width: 480px;
             margin: 10px 0;
             display: flex;
